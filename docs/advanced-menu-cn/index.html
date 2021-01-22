@@ -117,7 +117,7 @@
 <span class="token punctuation">}</span><span class="token operator">></span> <span class="token punctuation">{</span>
   <span class="token comment">// 如果是登录页面，不执行</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>history<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname <span class="token operator">!==</span> <span class="token string">'/user/login'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> currentUser <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">queryMenuData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> menuData <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">queryMenuData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token punctuation">{</span>
       menuData<span class="token punctuation">,</span>
       settings<span class="token operator">:</span> defaultSettings<span class="token punctuation">,</span>
